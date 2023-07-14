@@ -45,6 +45,11 @@ ul {
 
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .header, .footer {
   display: flex;
   justify-content: space-between;
