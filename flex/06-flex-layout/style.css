@@ -18,6 +18,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  font-weight: 550;
+  padding: 8px 16px; /* Did not add the second padding value of 16px; */
 }
 
 input {
@@ -28,25 +30,59 @@ input {
   margin-bottom: 16px;
 }
 
-.header {
+a {
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+ }
+
+ul {
+  display:flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 16px;
+
+}
+
+.header, .footer {
   display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background: #eee;
 }
 
 .header ul {
   list-style-type: none;
   padding-left: 0;
-  
+
+}
+
+.footer ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-links {
   display: flex;
   margin-right: auto;
-  gap: 8px;
+  gap: 16px;
 }
 
 .right-links {
   display: flex;
   margin-left: auto;
-  gap: 8px;
+  gap: 16px;
 }
 
